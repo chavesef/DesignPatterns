@@ -14,7 +14,7 @@ class FactoryTest {
     void testCreateCafe() {
         //creating unit test for the factory pattern
         Cafe cafe = CafeFactory.createCafe("Preto", "Arabica", "Teste Jenkins", "Expresso", "Sudeste",
-                true, false, false, true, 9, 12.90, "Azul");
+                true, false, false, true, 9, 12.99, "Azul");
         Cafe cafeEsperado = createCafe();
         assertEquals(cafeEsperado.getCor(), cafe.getCor());
         assertEquals(cafeEsperado.getTipo(), cafe.getTipo());
@@ -34,7 +34,7 @@ class FactoryTest {
         cafe.setDescricao("Teste Jenkins");
         cafe.setTipo("Arabica");
         cafe.setEspecie("Azul");
-        cafe.setTamanho(12.90);
+        cafe.setTamanho(12.99);
         cafe.setInternacional(true);
         cafe.setCapsula(true);
         cafe.setAdocado(false);
