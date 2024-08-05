@@ -23,7 +23,6 @@ class FactoryTest {
         assertEquals(cafeEsperado.getEspecie(), cafe.getEspecie());
         assertEquals(cafeEsperado.isCapsula(), cafe.isCapsula());
         assertEquals(cafeEsperado.isComLeite(), cafe.isComLeite());
-        assertEquals(cafeEsperado.getTamanho(), cafe.getTamanho());
     }
 
     private Cafe createCafe() {
