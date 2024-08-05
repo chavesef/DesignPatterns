@@ -43,3 +43,7 @@ tasks.jacocoTestReport {
 		html.outputLocation.set(layout.buildDirectory.dir("jacocoHtml"))
 	}
 }
+
+springBoot {
+	mainClass.value("com.sippar.pattern.creational.factory.App.java")
+}
