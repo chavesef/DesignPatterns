@@ -27,14 +27,4 @@ pipeline {
             }
         }
     }
-
-    post {
-        always {
-            // Archive the test results
-            junit '**/build/test-results/test/*.xml'
-
-            // Archive the coverage report
-            archiveArtifacts 'build/reports/jacoco/test/html/**/*'
-        }
-    }
 }
